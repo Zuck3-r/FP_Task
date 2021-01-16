@@ -51,4 +51,6 @@ test:
 # You can use this database configuration with:
 #
 production:
-  url: <%= ENV['DATABASE_URL'] %>
+  database: <%= ENV['DB_NAME'] %> 
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
